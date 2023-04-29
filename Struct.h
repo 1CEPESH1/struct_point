@@ -27,11 +27,10 @@ struct student
     {
         std::string OrderS = std::to_string(Order);
         std::string AverageS = std::to_string(Average);
-
-
         return "Name: " + Name + " Order: " +  OrderS + " Average: " + AverageS + "\n";
 
     }
 };
+
 
 #endif //STRUCT_POINT_STRUCT_H
