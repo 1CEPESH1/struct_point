@@ -27,16 +27,15 @@ const int SIZE = 5;
 
 student arr[SIZE]
 {
-    student("VANNES", "1", "5"),
-    student("ALEXEY", "2", "5"),
-    student("VLADISIUS", "3", "5"),
-    student("LIZA", "4", "5"),
-    student("ILYA", "5", "999"),
+    student("VANNES", 1, 5),
+    student("ALEXEY", 2, 5),
+    student("VLADISIUS", 3, 5),
+    student("LIZA", 4, 5),
+    student("ILYA", 5, 999),
 };
 
     for(int i = 0; i < SIZE; i++)
     {
-
         fout << arr[i].GetInfo() ;
     }
 

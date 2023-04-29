@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <string>
+#include <map>
 
 
 #ifndef STRUCT_POINT_STRUCT_H
@@ -13,7 +14,7 @@ struct student
     public:
 
 
-    student (std::string Name, std::string Order, std::string Average)
+    student (std::string Name, int Order, int Average)
     {
         this->Name = Name;
         this->Order = Order;
@@ -21,16 +22,20 @@ struct student
     }
 
     std::string GetInfo()
-    {
-        return "Name: " + Name + " Order: " + Order + " Average: " + Average + "\n";
-    }
+        {
+            std::string OrderS = std::to_string(Order);
+            std::string AverageS = std::to_string(Average);
 
+
+            return "Name: " + Name + " Order: " +  OrderS + " Average: " + AverageS + "\n";
+
+    }
 
     private:
 
     std::string Name;
-    std::string Order;
-    std::string Average;
+    int Order;
+    int Average;
 
 };
 
